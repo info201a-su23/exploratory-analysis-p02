@@ -5,50 +5,80 @@ output: html_document
 
 ## Project title
 
-Give your project a concise, interesting title that summarizes the entirety of your project
+An In-Depth Analysis of Crime Data in Los Angeles
 
 ### Authors
-
-Names of your team members
+Zerui Guan(gzr2004@uw.edu)
+Yuanxi Li(yuanxili@uw.edu)
+Xinyi Zhou(xzhou34@uw.edu)
+Kaiyun Zheng(kaiyun04@uw.edu)
 
 ### Date
 
-Winter 2022
+Summer 2023
 
 ### Abstract
-
-No more than three sentences that summarize your project. Focus on the very most important aspects. For example: (1) "Our main question is .... This question is important because .... To address the question, we will ...." (2) "We are concerned with ..., because .... To address this concern, we plan to ...." (3) "Consider that .... This is important because .... Accordingly, we plan to ...."
+Our main question is analyzing the complex patterns of urban crime in Los Angeles，this question is important because it is useful information for public safety.To address the question, we will create data visualizations to discern crime trends and hotspots.In addition,we will try to make some analysis about the area with the highest frequency of crime,we aim to create a safer LA society and call for people’s attention on crime through this project.
 
 ### Keywords
-
-3-5 keywords that summarize your project.
-(e.g., "Keywords: human physiology; bicycle exercise; Gen Z; times-series data")
+1. Temporal Crime Patterns
+2. Crime Hotspots
+3. Geographical Crime Distribution
+4. Crime in Los Angeles
+5. Time-based Crime Trends
 
 ### Introduction  
+Our project seeks to decode the intricate patterns of urban crime in Los Angeles using detailed crime datasets. We aim to identify trends, pinpoint crime hotspots. Our mission is to furnish policymakers with incisive analyses, equipping them to sculpt informed, effective public policy. We strive to bolster the safety of Los Angeles communities.
 
-Briefly introduce your project.  Include 3-5 research questions. What motivates the questions? Why are they important? (at least 200 words)
+The principal research questions guiding our project are:
+
+1.Is there a temporal pattern to crime rates, such as fluctuations over the day, week, or year?
+2.What are the crime hotspots in Los Angeles?
+3.What area has most frequent crime incidents over the dataset? Compared to other areas, how does the most frequent crime area differ from the distribution of the types of crime committed?
+4.What is the distribution of crime incidents over time in a day? In each time slot, what is the trend or distribution of types/locations of crime committed.
+
+These questions stem from an urgent need to better understand the dynamics of crime in our cities. Uncovering patterns in crime can shine a light on the deeper, often systemic causes. These insights can help policymakers and law enforcement to more strategically allocate resources, implementing preventative measures in areas and times where crime is predicted to occur. Furthermore, through a comprehensive understanding of crime distribution and types, we can inform more targeted social and economic policies to address root causes. 
+
+The importance of these questions lies not only in their potential to help us respond to crime effectively but also in their potential to proactively shape a safer city. With our analysis, we aim to contribute to making Los Angeles safer and more secure for all its residents.
 
 ### Related Work  
 
-Describe your topic and related work in this space. You must include 3 citations to related work (URLs to similar work, high quality articles from the popular press, research papers, etc. ) Please use a standard citation style of your choice. (at least 200 words)
+The project extensively examines crime trends and statistics in Los Angeles, employing comprehensive datasets. It aspires to inform and shape public policy, augmenting the community's overall safety. The role of crime analysis has become increasingly vital in the context of urban security and the development of policy, culminating in an emphasis on utilizing data to devise intelligent strategies for crime deterrence and the enforcement of laws.
+
+Previous work in this area has yielded insightful findings. Campedelli, Aziani, and Favarin (2021) explored the immediate effects of COVID-19 containment policies on crime, shedding light on short-term aftermaths in Los Angeles, a relevant aspect in considering temporal crime patterns (Campedelli, G. M., Aziani, A., & Favarin, S., 2021). Massenkoff and Chalfin (2022) conducted an analysis showing that, when adjusted for activity rates, public safety worsened in 2020, providing a critical perspective on crime rates (Massenkoff, M., & Chalfin, A., 2022). Additionally, a report by FOX LA (2023) highlights a decrease in LA's crime in 2023 compared to the previous year, aligning with the objective of this study to monitor and analyze temporal crime fluctuations (FOX LA, 2023).
+
+Collectively, these research efforts and reports emphasize the intricate nature of urban crime, highlighting the need for a data-driven approach to its analysis. The knowledge gleaned from this ongoing research has the potential to inform the strategic deployment of resources, proactive measures, and specific socio-economic policies – all aimed at making the city safer—this body of work aids in efficiently responding to crime and proactively formulating standards to enhance public safety. Our project aligns with these goals, striving to foster a safer living environment for the inhabitants of Los Angeles.
+
+Reference:
+
+Campedelli, G. M., Aziani, A., & Favarin, S. (2021). Exploring the immediate effects of COVID-19 containment policies on crime: An empirical analysis of the short-term aftermath in Los Angeles.*American Journal of Criminal Justice*, *46*(5), 704-727.
+
+FOX LA. (2023). Crime in LA down in 2023 compared to last year, data shows. FOX LA. https://www.foxla.com/news/crime-in-la-down-in-2023-compared-to-last-year-data-shows
+
+Massenkoff, M., & Chalfin, A. (2022). Activity-adjusted crime rates show that public safety worsened in 2020.*Proceedings of the National Academy of Sciences*, *119*(46), e2208598119.
 
 ### The Dataset
 
-Where did you find the data? Please include a link to the data source  
-Who collected the data?  
-How was the data collected or generated?  
-Why was the data collected?  
-How many observations (rows) are in your data?  
-How many features (columns) are in the data?  
-What, if any, ethical questions or questions of power do you need to consider when working with this data?  
-What are possible limitations or problems with this data?   (at least 200 words)
+The [dataset](https://www.kaggle.com/datasets/susant4learning/crime-in-los-angeles-data-from-2020-to-present), illustrating crime incidents in Los Angeles from 2020 onwards, was compiled by the Los Angeles Police Department. It includes 317,855 observations and 28 features. By recording these details, the authorities can identify trends, hotspots, and potential socio-economic links to crimes, allowing for a more informed and strategic approach to crime prevention and response. The data is transcribed from original crime reports manually typed on paper, leading to potential inaccuracies within the dataset. Missing location fields are sometimes noted as (0°, 0°), and address fields are only provided to the nearest hundred blocks to maintain privacy. These factors can create substantial obstacles for anyone conducting an in-depth spatial analysis. Additionally, the manual nature of the original data recording might lead to transcription mistakes, affecting the overall integrity and dependability of the information. It's essential to recognize ethical considerations, such as upholding the confidentiality of those implicated in these incidents and the potential biases in reporting or recording crimes. The dataset's accuracy is also inherently tied to the source database. Thus, any existing errors or biases would be carried over. These ethical and practical constraints require a careful, conscientious approach when employing this dataset to glean meaningful information about crime trends and patterns in Los Angeles, especially in understanding the impact since the onset of COVID-19.
 
 ### Implications
 
-Assuming you answer your research questions, briefly describe the expected or possible implications for technologists, designers, and policymakers. (at least 150 words)
+Understanding the temporal patterns of crime rates can have significant impacts. Technologists and designers can create algorithms and models to develop more accurate crime prediction and prevention systems by analyzing these historical crime data and identifying crime patterns during specific time ranges. Policymakers can use this information to implement targeted interventions and policies during high crime.
+
+Identifying crime hotspots in Los Angeles can help build crime hotspot maps, reflecting the relationship between locations and criminal incidents. It can help technologists and designers develop location-based crime reporting and alert systems, providing real-time crime updates and safety notifications to residents and visitors in high-risk areas. Policymakers can also utilize this information to allocate resources for increased patrols, surveillance, and community engagement initiatives in these crime hotspots.
+
+Knowing the crime incident frequency in different areas inside Los Angeles is also essential. Designers can look at urban design to see if the city's planning is sound and if a new police station is needed to reduce crime. Technology experts can provide better advice to law enforcement agencies and better links between police stations and crime locations to help enforce the law effectively. Policymakers can better plan and deploy programs to deal with crime incidents.
+
+Studying different types of criminal incidents with their locations can help designers make better urban planning, taking more consideration and avoiding further damage. The technologists can give more detailed reports on criminal predictions, providing specific visualization to raise public awareness. For policymakers, this information can serve as a basis for implementing community-oriented programs, social services, and neighborhood revitalization efforts to effectively address the root causes of crime in the most affected area.
 
 ### Limitations & Challenges
-What challenges or limitations might you need to address with your project idea more broadly? Briefly discuss. (at least 150 words)
+
+The first challenge is ensuring the data's quality and completeness. For instance, underreported or misclassified crimes can skew the analysis and lead to inaccurate results. These results will misguide the researchers and citizens, leading to an erroneous understanding and conclusions. This outcome contradicts our purpose of making this data visualization.
+
+The second challenge is the level of detail in the crime data can significantly impact the analysis. Identifying crime hotspots or detecting temporal patterns may be difficult if the data are not sufficiently granular. The level of detail is essential in finding the pattern of the data. However, some elements might need to be more specific, which makes analysis difficult to generate. Thus, the pattern might be biased and generated. 
+
+The third challenge is findings from Los Angeles may not generalize to other cities due to unique local factors.
+Since different cities have different situations, it takes work to generalize them by a format of the findings from LA. Thus, we have to be careful when analyzing the data and making conclusions.
 
 ### Summary Information
 
