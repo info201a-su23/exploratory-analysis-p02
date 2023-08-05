@@ -3,6 +3,12 @@ title: "Exploratory Analysis"
 output: html_document
 ---
 
+```{r include=F}
+source("chart_1.R")
+source("chart_2.R")
+source("chart_3.R")
+```
+
 ## Project title
 
 An In-Depth Analysis of Crime Data in Los Angeles
@@ -82,33 +88,44 @@ Since different cities have different situations, it takes work to generalize th
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
+Crime Dataset
+
+Crime number of Rows:317854  
+
+Crime number of Columns:28 
+
+Number Of Area:21 
+
+Number Of Crime Type:133
+
+Eldest Victim Age:120
+
+The summary of the crime dataset indicates a largenumber of cases.This data encompasses 21 distinct areas, and the range of crime types is notably diverse, with as many as 133 different classifications. One particularly striking detail from the dataset is the age of the eldest victim, marked at an unusual 120 years. This fact underscores the vulnerability of individuals across all age groups to crime.In addition,this extensive dataset provides a comprehensive overview of crime trends and patterns.
 
 ### Table
 
-Include a table of aggregate information
-
-Describe why you included the table and what information it reveals
+The first table is classified by the age of Victims, with an interval of 10 years old, listing the number of Victims in each age group. This table not only allows people to understand the age distribution of victims more intuitively, but also can find patterns from it. The Second table classifies the area and lists the number of crime incidents in each area, with the highest number on 77th Street. Presenting in this way allows people to quickly understand the security situation of each area.
 
 ### Chart 1
 
 The reason for choosing this chart is that it helps researchers to find a more accurate prediction of crime patterns and makes citizens have a clearer understanding to the patterns.This is important for them to understand the situation of time period related to crime. From the chart with the range of dates, the overall trend is upward and the number of cases is between 350-750 per day.According to the chart with the range of months, from January to July, the number of crime incidents per month is relatively stable, about more than 30,000 per month, with the highest number occurring in July. August is a transition point, dropping from about 30,000 to about 25,000, and then falling to September-December with a relatively small number of about 15,000 per month.
 
-``````{r, echo = FALSE, code = readLines("chart1_example.R")}
-
+```{r, echo = FALSE, warning=F, message=F}
+trend_plot
 ```
 
 ### Chart 2
 
 The reason for choosing this chart is that the map of crime hot spots in Los Angeles will reflect the relationship between locations and the criminal incidents. This information is important to citizens because they can notice the high-risk area and get crime notifications to protect themselves.Moreover, this map also can help for research and the management of allocating the police resources.According to the map,central LA shows the darkest purple, indicating a relatively high number of criminal incidents in this area. The closer to the north and south, the lighter the purple color and the fewer incidents. In the fringe areas of LA, it is mainly gray, and the number is relatively small, mostly below 100.
 
-``````{r, echo = FALSE, code = readLines("chart1_example.R")}
-
+```{r, echo = FALSE, warning=F, message=F}
+map
 ```
 
 ### Chart 3
 
 This chart provides valuable insights into the top ten crime types that occurred most frequently in Los Angeles between 2020-2021. By highlighting these common criminal events, it raises awareness among residents and offers the government a clearer perspective on governance direction. The data presented here offers a high-level overview of safety issues that require attention in the Los Angeles area, making it a significant resource for analysis and decision-making. One notable finding from the chart is that vehicle theft was the most frequently recorded case between 2020-2021, with nearly 40,000 incidents. This serves as a crucial reminder to citizens to be vigilant about safeguarding their vehicles to prevent further economic losses. Another significant observation is the occurrence of approximately 25,000 to 30,000 simple assault cases. This alarming figure serves as a warning to the public about potential physical harm, emphasizing the importance of safety and conflict resolution. Moreover, the chart reveals around 20,000 crimes involving vandalism, theft, car theft, and fatal injuries. These statistics demand both public attention and government intervention to address and reduce these serious criminal activities. In conclusion, this chart offers valuable data on the most prevalent criminal case types in Los Angeles. By using this information to inform policies and strategies, the city can work towards enhancing safety and security for its residents.
 
-``````{r, echo = FALSE, code = readLines("chart1_example.R")}
+```{r, echo = FALSE, warning=F, message=F}
+chart_3
 ```

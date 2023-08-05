@@ -1,7 +1,7 @@
 library(ggplot2)
 library(dplyr)
 library(lubridate)
-crime_data <- read.csv("Crime_Data_from_2020_to_Present.csv")
+crime_data <- read.csv("https://raw.githubusercontent.com/info201a-su23/exploratory-analysis-p02/main/Crime_Data_from_2020_to_Present.csv", fill = TRUE)
 
 crime_data$Date_Rptd <- as.Date(crime_data$Date.Rptd, format = "%m/%d/%Y")
 crime_counts <- crime_data %>% group_by(Date_Rptd) %>% summarise(Count = n())

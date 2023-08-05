@@ -1,7 +1,7 @@
 library(dplyr)
 library(leaflet)
 
-data <- read.csv("Crime_Data_from_2020_to_Present.csv")
+data <- read.csv("https://raw.githubusercontent.com/info201a-su23/exploratory-analysis-p02/main/Crime_Data_from_2020_to_Present.csv", fill = TRUE)
 
 grid_cell_size <- 0.005
 crime_data$CellRow <- floor(crime_data$LAT / grid_cell_size)
