@@ -102,9 +102,22 @@ Eldest Victim Age:120
 
 The summary of the crime dataset indicates a largenumber of cases.This data encompasses 21 distinct areas, and the range of crime types is notably diverse, with as many as 133 different classifications. One particularly striking detail from the dataset is the age of the eldest victim, marked at an unusual 120 years. This fact underscores the vulnerability of individuals across all age groups to crime.In addition,this extensive dataset provides a comprehensive overview of crime trends and patterns.
 
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+source("Summary.R")
+library(knitr)
+kable(crime_summary_table)
+```
+
 ### Table
 
 The first table is classified by the age of Victims, with an interval of 10 years old, listing the number of Victims in each age group. This table not only allows people to understand the age distribution of victims more intuitively, but also can find patterns from it. The Second table classifies the area and lists the number of crime incidents in each area, with the highest number on 77th Street. Presenting in this way allows people to quickly understand the security situation of each area.
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+source("table.R")
+kable(gender_summary_table)
+kable(age_summary_df)
+kable(area_summary_table)
+```
 
 ### Chart 1
 

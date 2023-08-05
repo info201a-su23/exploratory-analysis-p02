@@ -19,7 +19,7 @@ age_groups <- cut(df_crime$Vict.Age,
                   breaks = breaks,
                   labels = c("0-10", "10-20", "20-30", "30-40", "40-50", "50-60", "60-70", "70-80", "80-90", "90-100", "100-110", "110-120"), include.lowest = TRUE, right = FALSE)
 
-age_summary_table <- table(age_groups)
+age_summary_df <- data.frame(table(age_groups))
 
 area_info <- df_crime %>% group_by(AREA.NAME) %>% summarise(Count = n())
 
